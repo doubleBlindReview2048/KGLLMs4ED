@@ -35,27 +35,13 @@ for data_name in datasets:
                 if len(types) == 0:
                     continue #Not in KB scenario
 
-            ################### LINK CLASSES TO CURATED GRAPH ##################################
+            ################### LINK TO ONLY RELATED CLASSES ##################################
 
             G = build_graph(candidates)
 
              ################## REMOVE SELF POINTING EDGES #############################
 
             G = remove_self_pointing_edges(G)
-            
-            ################## REMOVE CLASSES WITH NO SUCCESSORS #########################
-
-            out_degree_dict = dict(G.out_degree())
-            to_remove = [key for key, value in out_degree_dict.items() if (value == 0) and (key not in candidates)]  
-
-            while len(to_remove) !=0:
-                for node in to_remove:
-                    G.remove_node(node)
-                out_degree_dict = dict(G.out_degree())
-                to_remove = [key for key, value in out_degree_dict.items() if (value == 0) and (key not in candidates)]
-                    
-            out_degree_dict = dict(G.out_degree())
-            candidates = [key for key, value in out_degree_dict.items() if value == 0]
 
             ################## REMOVE INTERMEDIATE NODES ######################### 
 

@@ -68,11 +68,9 @@ for data_name in datasets:
                             if direct:
                                 G.add_edge(current_type,candidate) # Add the edge
                         
-            ######################## REMOVE SELF POINTING EDGES ##########################
-
-            G = remove_self_pointing_edges(G)
-
-            ################## REMOVE CLASSES WITH NO SUCCESSORS #########################
+            
+            
+            ################## REMOVE UNRELATED CLASSES #########################
 
             out_degree_dict = dict(G.out_degree())
             to_remove = [key for key, value in out_degree_dict.items() if (value == 0) and (key not in candidates)]  
@@ -85,7 +83,11 @@ for data_name in datasets:
                     
             out_degree_dict = dict(G.out_degree())
             candidates = [key for key, value in out_degree_dict.items() if value == 0]
-            
+
+
+            ######################## REMOVE SELF POINTING EDGES ##########################
+
+            G = remove_self_pointing_edges(G)            
 
             ################## REMOVE INTERMEDIATE NODES #########################
             
