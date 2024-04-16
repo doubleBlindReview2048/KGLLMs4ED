@@ -26,12 +26,11 @@ for dataset_name in dataset_list:
     # Experiment variables
     llm_provider = 'openai' #llmstudio, openai, mistral
     model_name = 'gpt35' #mistral-large, mistral-small, gpt35, mistral7B
-    ontology = 'yago'
+    ontology = 'yago' #db
     candidateSet = 'chatel' # chatel
     dataset = dataset_name
-
     model = "gpt-3.5-turbo-1106" # 'mistral-large-latest' 
-
+    sanity_check = False # For LLMs with a lot of erroneous responses
 
     experiment_name = dataset + '_pipeline_'+model_name+'_'+ontology+'_'+candidateSet
     dataset_file = r'./data/'+dataset+'_'+candidateSet+'.jsonl'
@@ -183,23 +182,10 @@ for dataset_name in dataset_list:
                             candidates = [key for key, value in out_degree_dict.items() if value == 0]
 
                     
-                    ################################# SANITY CHECK ###########################################
-                        
-                    if config != 2 and len(candidates) ==1: #If we have assigned by discarting
-                        prompt = case_check_query(candidates[0],text,mention)
-                        yes_no = get_response(prompt,client, provider=llm_provider, model=model)
+                    # OPTIONAL SANITY CHECK 
+                    if sanity_check and ((config != 2 and len(candidates) == 1) or candidates[0] == 'BadLLM'):
+                        candidates = check_errors(candidates, full_candidates,text, mention, prompt,client,llm_provider, model)
                         iteration += 1
-                        if yes_no == 'Yes' or yes_no == 'No':
-                            llm = yes_no
-                        else:
-                            llm = json.loads(yes_no)['answer']
-
-
-                        if llm == 'No' or 'BadLLM:' in candidates[0]:
-                            prompt = case_none_query(full_candidates,text,mention)
-                            llm = json.loads(get_response(prompt, client, provider=llm_provider, model=model))['entity']
-                            iteration += 1
-                            candidates = [llm]
 
                     iteration += 1
 

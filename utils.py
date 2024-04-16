@@ -4,6 +4,7 @@ import xml.etree.ElementTree as ET
 import networkx as nx
 import wikipediaapi
 import requests
+import json
 import re
 
 
@@ -436,6 +437,25 @@ def case_check_query(response, text, mention):
     prompt += '\nAnswer only Yes or No in json format: {"answer": "Yes|No"}'
 
     return prompt
+
+
+def check_errors(candidates, full_candidates ,text, mention, prompt,client,llm_provider, model):
+    '''
+    Check errors when the LLM produced a bad result or the class was potentially incorrect
+    '''
+
+    if candidates[0] != 'BadLLM':
+        prompt = case_check_query(candidates[0],text,mention)
+        llm = json.loads(get_response(prompt,client, provider=llm_provider, model=model))['answer']
+    else:
+        llm = 'No'
+
+    if llm == 'No':
+        prompt = case_none_query(full_candidates,text,mention)
+        llm = json.loads(get_response(prompt, client, provider=llm_provider, model=model))['entity']
+        candidates = [llm]
+
+    return candidates
 
 ############################################################################################
 #                              CLEAN URI AND ANSWERS                                       #
