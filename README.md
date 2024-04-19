@@ -10,5 +10,6 @@ This repository contains the data and the code to reproduce the experiments for 
  * Output: ED results in csv file (/results_{ontology|baseline})
  * Scripts: *pipeline_db.py*, *pipeline_yago.py* and *baseline.py*
 
-![image](https://github.com/doubleBlindReview2048/KGLLMs4ED/assets/166696179/b8424d91-92b8-4a7a-af3a-0138c8dd25f2)
+![image](https://github.com/doubleBlindReview2048/KGLLMs4ED/assets/166696179/c3bd741a-f8a7-41e6-9f76-c54e94352c71)
+
 
