@@ -8,4 +8,7 @@ This repository contains the data and the code to reproduce the experiments for 
 2. **Entity disambiguation**: The scripts *pipeline_db.py*, *pipeline_yago.py* and *baseline.py* will generat the answer for the enitity disambiguation task. They rely on the usage of an LLM. The provided implementation is compatible with OpenAI API, Mistral API and LLMStudio (which allows to self-host LLM). Therefore, to get the results one must own an API key.  Again, the communication with the LLM and the speed in which an answer is returned may very depending on the model used and other factors such as the day or the time. Also, the models provided by OpenAI or Mistral may change or be updated.
  * Input: datasets jsonl files (/data/), subgraph pickle files (/subgraphs_{ontology}/)
  * Output: ED results in csv file (/results_{ontology|baseline})
- * Scripts: *pipeline_db.py*, *pipeline_yago.py* and *baseline.py* 
+ * Scripts: *pipeline_db.py*, *pipeline_yago.py* and *baseline.py*
+
+![image](https://github.com/doubleBlindReview2048/KGLLMs4ED/assets/166696179/b8424d91-92b8-4a7a-af3a-0138c8dd25f2)
+
