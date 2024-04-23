@@ -10,6 +10,7 @@ This repository contains the data and the code to reproduce the experiments for 
  * Output: ED results in csv file (/results_{ontology|baseline})
  * Scripts: *pipeline_db.py*, *pipeline_yago.py* and *baseline.py*
 
+3. **Evaluate results**: The script *evaluation.py* will generate the F1-score, the Gold-F1 and the % of Gold-F1 score, all inKB.
 ![image](https://github.com/doubleBlindReview2048/KGLLMs4ED/assets/166696179/c3bd741a-f8a7-41e6-9f76-c54e94352c71)
 
 
