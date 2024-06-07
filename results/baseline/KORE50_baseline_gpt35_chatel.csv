@@ -1,0 +1,149 @@
+id,candidate_length,in_candidates,response,answer
+0,10,True,David Beckham,David Beckham
+1,10,False,nic,Victoria Beckham
+2,10,False,nic,
+3,10,False,nic,
+4,10,False,nic,
+5,7,False,nic,
+6,10,True,David Beckham,David Beckham
+7,10,False,nic,Victoria Beckham
+8,10,True,Tiger Woods,Tiger Woods
+9,10,True,Elin Nordegren,Elin Nordegren
+10,10,True,Tiger Woods,Tiger Woods
+11,10,True,U.S. Open (golf),U.S. Open (golf)
+12,10,True,Madonna (entertainer),Madonna (entertainer)
+13,10,False,nic,Eva PerÃ³n
+14,10,False,nic,Carlos Leon
+15,10,True,Madonna (entertainer),Madonna (entertainer)
+16,10,False,nic,First Ladies and Gentlemen of Argentina
+17,10,True,Angelina Jolie,Angelina Jolie
+18,10,False,nic,Jon Voight
+19,10,True,Brad Pitt,Brad Pitt
+20,10,True,Heidi Klum,Heidi Klum
+21,10,True,Seal (musician),Seal (musician)
+22,10,True,Las Vegas,Las Vegas
+23,10,True,Paris Hilton,Paris Hilton
+24,10,True,Kim Kardashian,Kim Kardashian
+25,10,True,Justin Timberlake,Justin Bieber
+26,10,True,Gwen Stefani,Lady Gaga
+27,10,False,nic,Katy Perry
+28,10,True,MTV,MTV
+29,10,True,Internet,Twitter
+30,10,True,Bob Dylan,Bob Dylan
+31,10,True,Hurricane (Bob Dylan song),Hurricane (Bob Dylan song)
+32,10,False,nic,Rubin Carter
+33,10,False,nic,Desire (Bob Dylan album)
+34,10,False,nic,Desire (Bob Dylan album)
+35,10,False,nic,Emmylou Harris
+36,10,True,Joey (Concrete Blonde song),Joey (Bob Dylan song)
+37,10,True,Eric Clapton,Eric Clapton
+38,10,True,Jeff Beck,Jeff Beck
+39,10,True,Jimmy Page,Jimmy Page
+40,10,False,nic,Paul Allen
+41,10,True,EMP Museum,EMP Museum
+42,10,True,Seattle,Seattle
+43,10,True,Jimi Hendrix,Jimi Hendrix
+44,10,True,Bob Dylan,Bob Dylan
+45,10,True,Frank Sinatra,Frank Sinatra
+46,10,True,Bob Dylan,Bob Dylan
+47,10,False,nic,Billy Joel
+48,10,True,Carlos Santana,Carlos Santana
+49,10,True,Columbia Records,Columbia Records
+50,10,True,Sony,Sony Music Entertainment
+51,10,True,Johnny Cash,Johnny Cash
+52,3,True,American Recordings (album),American Recordings (album)
+53,10,False,nic,Rick Rubin
+54,3,True,Josh Homme,Josh Homme
+55,1,True,Dave Grohl,Dave Grohl
+56,10,True,John Paul Jones (musician),John Paul Jones (musician)
+57,10,True,Steve Jobs,Steve Jobs
+58,10,True,Joan Baez,Joan Baez
+59,10,True,Stanford University,Stanford University
+60,3,True,Isle of Wight Festival 1970,Isle of Wight Festival
+61,10,True,Woodstock,Woodstock
+62,10,True,Miles Davis,Miles Davis
+63,10,True,Chicago (band),Chicago (band)
+64,10,False,nic,Joni Mitchell
+65,10,False,nic,Eric Clapton
+66,10,True,Blues,Blues
+67,10,True,Rock music,Rock music
+68,10,True,John Mayall,John Mayall
+69,10,True,Steve Jobs,Steve Jobs
+70,10,True,Apple Inc.,Apple Inc.
+71,10,True,Stanford University,Stanford University
+72,10,True,Steve Ballmer,Steve Ballmer
+73,10,True,Stanford University,Stanford University
+74,10,True,Microsoft,Microsoft
+75,10,True,Microsoft Windows,Microsoft Windows
+76,10,True,Cairo (operating system),Cairo (operating system)
+77,10,True,Microsoft,Microsoft
+78,10,True,Bill Gates,Bill Gates
+79,10,True,Steve Jobs,Steve Jobs
+80,10,True,Bill Gates,Bill Gates
+81,10,True,Sergey Brin,Sergey Brin
+82,10,True,Larry Page,Larry Page
+83,10,False,nic,Karl Albrecht
+84,10,True,Theo Albrecht,Theo Albrecht
+85,10,True,Apple Inc.,Apple Inc.
+86,10,True,Mango (clothing),Mango (clothing)
+87,10,False,nic,Orange (telecommunications)
+88,10,False,nic,Sam Zell
+89,1,True,Equity International,Equity International
+90,7,True,Pixar,Pixar
+91,10,True,Cars (film),Cars (film)
+92,10,True,John Lasseter,John Lasseter
+93,10,True,Mars (chocolate bar),Mars (chocolate bar)
+94,10,False,nic,Galaxy (chocolate)
+95,10,True,Bounty (chocolate bar),Bounty (chocolate bar)
+96,10,True,Robert Bosch GmbH,Robert Bosch GmbH
+97,10,True,Sharp Corporation,Sharp Corporation
+98,10,False,nic,Manchester City F.C.
+99,10,True,Tottenham Hotspur F.C.,Tottenham Hotspur F.C.
+100,7,True,Arsenal F.C.,Arsenal F.C.
+101,10,True,Emirates Stadium,Emirates Stadium
+102,3,True,Atlético Madrid,Atlético Madrid
+103,10,False,nic,Real Madrid C.F.
+104,10,True,Thomas Müller,Thomas Müller
+105,10,True,England national football team,England national football team
+106,10,False,nic,Thomas Müller
+107,10,False,nic,Mario Gómez
+108,10,False,nic,FC Bayern Munich
+109,10,False,nic,Norbert Haug
+110,10,False,nic,FC Red Bull Salzburg
+111,1,True,Rudi Völler,Rudi Völler
+112,10,True,Netherlands national football team,Netherlands national football team
+113,5,True,San Siro,San Siro
+114,6,True,Landgrave,Willi Landgraf
+115,10,False,nic,Erik Meijer (footballer)
+116,10,False,nic,New Tivoli
+117,3,True,Reinhold Yabo,Reinhold Yabo
+118,10,True,Alemannia Aachen,Alemannia Aachen
+119,10,True,Hertha BSC,Hertha BSC
+120,10,True,Borussia Dortmund,Borussia Dortmund
+121,10,True,Richard Nixon,Richard Nixon
+122,10,True,Watergate scandal,Watergate scandal
+123,1,True,Ping-pong diplomacy,Ping-pong diplomacy
+124,10,True,China,China
+125,10,True,The Sun,The Sun (United Kingdom)
+126,10,True,The Times,The Times
+127,10,True,Greece,Greece
+128,10,False,nic,Eurozone
+129,2,True,Enola Gay,Enola Gay
+130,10,True,Atomic bombings of Hiroshima and Nagasaki,Hiroshima
+131,10,True,World War II,World War II
+132,10,True,Red Army Faction,Red Army Faction
+133,9,True,Andreas Baader,Andreas Baader
+134,5,True,Ulrike Meinhof,Ulrike Meinhof
+135,4,True,Hanns Martin Schleyer,Hanns Martin Schleyer
+136,4,True,Aristotle Onassis,Jacqueline Kennedy Onassis
+137,10,True,Jacqueline Kennedy,John F. Kennedy
+138,10,True,Neil Armstrong,Neil Armstrong
+139,10,True,Moon,Moon
+140,10,True,Erich Gamma,Erich Honecker
+141,10,True,"Neunkirchen, Saarland","Neunkirchen, Saarland"
+142,10,True,Macedonia (Greece),Macedonia (Greece)
+143,10,True,Greece,Greece
+144,10,True,Barack Obama,Barack Obama
+145,10,True,Angela Merkel,Angela Merkel
+146,10,True,John F. Kennedy International Airport,John F. Kennedy International Airport
+147,10,False,nic,John P. Kennedy

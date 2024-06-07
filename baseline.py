@@ -8,7 +8,7 @@ from mistralai.client import MistralClient
 
 
 dataset_list = ['wiki','aqu','ace2004','cweb','KORE50','msn','oke15','oke16','reu','RSS ']
-os.makedirs('./results_baseline')
+os.makedirs('./results/baseline')
 
 for dataset_name in dataset_list:
 
@@ -34,7 +34,7 @@ for dataset_name in dataset_list:
     # Open mentions
     with open(r'./data/'+dataset+'_'+candidateSet+'.jsonl', 'r', encoding='utf-8') as file:
 
-        with open(r'./results_baseline/'+dataset+'_baseline_'+model_name+'_'+ontology+'_'+candidateSet+'.csv', 'a', newline='', encoding='utf-8') as csvfile:
+        with open(r'./results/baseline/'+dataset+'_baseline_'+model_name+'_'+candidateSet+'.csv', 'a', newline='', encoding='utf-8') as csvfile:
 
             csvwriter = csv.writer(csvfile)
             csvwriter.writerow(['id', 'candidate_length', 'in_candidates', 'response', 'answer'])

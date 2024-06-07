@@ -13,7 +13,7 @@ from utils import *
 from openai import OpenAI
 
 dataset_list = ['wiki','aqu','ace2004','cweb','KORE50','msn','oke15','oke16','reu','RSS ']
-os.makedirs('./results_db') 
+os.makedirs('./results/db') 
 
 for dataset_name in dataset_list:
 
@@ -49,7 +49,7 @@ for dataset_name in dataset_list:
 
     with open(dataset_file, 'r', encoding='utf-8') as file:
 
-        with open('./results_db/'+experiment_name+'.csv', 'a', newline='', encoding='utf-8') as csvfile:
+        with open('./results/db/'+experiment_name+'.csv', 'a', newline='', encoding='utf-8') as csvfile:
 
             csvwriter = csv.writer(csvfile)
             csvwriter.writerow(['id', 'candidate_length', 'in_candidates', 'response', 'answer'])

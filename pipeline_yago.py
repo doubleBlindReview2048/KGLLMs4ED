@@ -14,7 +14,7 @@ from openai import OpenAI
 import networkx as nx
 
 dataset_list = ['wiki','aqu','ace2004','cweb','KORE50','msn','oke15','oke16','reu','RSS ']
-os.makedirs('./results_yago') 
+os.makedirs('./results/yago') 
 
 for dataset_name in dataset_list:
 
@@ -48,7 +48,7 @@ for dataset_name in dataset_list:
 
     with open(dataset_file, 'r', encoding='utf-8') as file:
 
-        with open('./results_yago/'+experiment_name+'.csv', 'a', newline='', encoding='utf-8') as csvfile:
+        with open('./results/yago/'+experiment_name+'.csv', 'a', newline='', encoding='utf-8') as csvfile:
 
             csvwriter = csv.writer(csvfile)
             csvwriter.writerow(['id', 'candidate_length', 'in_candidates', 'response', 'answer'])

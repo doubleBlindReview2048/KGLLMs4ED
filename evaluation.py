@@ -8,7 +8,10 @@ kg = 'yago'
 model_name = 'gpt35'
 candidateSet = 'chatel'
 
-df = pd.read_csv(r'./results_'+kg+'/'+dataset+'_'+method+'_'+model_name+'_'+kg+'_'+candidateSet)
+if method == 'baseline':
+    df = pd.read_csv(r'./results/baseline'+'/'+dataset+'_'+method+'_'+model_name+'_'+candidateSet)
+else:
+    df = pd.read_csv(r'./results_'+kg+'/'+dataset+'_'+method+'_'+model_name+'_'+kg+'_'+candidateSet)
 df.columns = ['id','candidate_length','in_candidates','response', 'answer']
 total_instances = len(df)
 zero_candidates = len(df[df['candidate_length']==0])
