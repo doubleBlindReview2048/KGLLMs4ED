@@ -2,17 +2,18 @@ import pandas as pd
 from utils import *
 
 
-dataset = 'cweb'
-method = 'pipeline'
-kg = 'yago'
+dataset = 'msn'
+method = 'pipeline' #{pipeline,baseline}
+kg = 'db' # {db,yago}
 model_name = 'gpt35'
 candidateSet = 'chatel'
 
 if method == 'baseline':
-    df = pd.read_csv(r'./results/baseline'+'/'+dataset+'_'+method+'_'+model_name+'_'+candidateSet)
+    df = pd.read_csv(r'./results/baseline'+'/'+dataset+'_'+method+'_'+model_name+'_'+candidateSet+'.csv')
 else:
-    df = pd.read_csv(r'./results_'+kg+'/'+dataset+'_'+method+'_'+model_name+'_'+kg+'_'+candidateSet)
+    df = pd.read_csv(r'./results/'+kg+'/'+dataset+'_'+method+'_'+model_name+'_'+kg+'_'+candidateSet+'.csv')
 df.columns = ['id','candidate_length','in_candidates','response', 'answer']
+
 total_instances = len(df)
 zero_candidates = len(df[df['candidate_length']==0])
 not_in_candidates = len(df[df['in_candidates']==False])
